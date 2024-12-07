@@ -15,6 +15,7 @@ viewer.axes.setAxes();
 
 const input = document.getElementById("file-input");
 
+//const input = document.getElementById("file-input");
 // Listen for file input change and load the IFC file
 input.addEventListener("change", (event) => {
   const file = event.target.files[0];
