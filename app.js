@@ -33,3 +33,6 @@ async function loadIfc(url) {
   await viewer.shadowDropper.renderShadow(model.modelID);
   viewer.context.renderer.postProduction.active = true;
 }
+
+window.ondblclick = async () => await viewer.IFC.selector.pickIfcItem();
+window.onmousemove = async () => await viewer.IFC.selector.prePickIfcItem();
